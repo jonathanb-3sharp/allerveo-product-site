@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" width="420" height="360">
+  <defs>
+    <linearGradient id="box" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E9F1F0"/>
+    </linearGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F6E69"/>
+      <stop offset="1" stop-color="#0B2545"/>
+    </linearGradient>
+  </defs>
+  <!-- soft backdrop circles -->
+  <circle cx="300" cy="90" r="70" fill="#FFFFFF" opacity="0.55"/>
+  <circle cx="90" cy="270" r="55" fill="#FFFFFF" opacity="0.45"/>
+  <!-- shadow -->
+  <ellipse cx="210" cy="322" rx="140" ry="14" fill="#0B2545" opacity="0.12"/>
+  <!-- carton side -->
+  <polygon points="300,70 340,50 340,290 300,312" fill="#CFE2E0"/>
+  <!-- carton top -->
+  <polygon points="80,70 120,50 340,50 300,70" fill="#F4F8F8"/>
+  <!-- carton front -->
+  <rect x="80" y="70" width="220" height="242" rx="4" fill="url(#box)" stroke="#D3DEE2"/>
+  <!-- brand band -->
+  <rect x="80" y="196" width="220" height="56" fill="url(#band)"/>
+  <rect x="80" y="252" width="220" height="6" fill="#E8554E"/>
+  <!-- Caldova mark -->
+  <circle cx="108" cy="100" r="13" fill="#0F6E69"/>
+  <path d="M113 94a7 7 0 1 0 0 12" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <text x="128" y="106" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="700" fill="#0B2545">Caldova</text>
+  <!-- product name -->
+  <text x="100" y="160" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="800" fill="#0B2545">Allerveo</text>
+  <text x="102" y="182" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#4A5A66">once-daily tablets</text>
+  <text x="100" y="231" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">30 tablets</text>
+  <!-- leaf / breeze motif -->
+  <path d="M230 120 C 260 100, 285 118, 280 146 C 255 150, 232 140, 230 120 Z" fill="#0F6E69" opacity="0.85"/>
+  <path d="M234 124 C 250 130, 264 138, 276 144" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  <!-- blister pack -->
+  <rect x="318" y="210" width="78" height="100" rx="10" fill="#FFFFFF" stroke="#C9D6DB" transform="rotate(12 357 260)"/>
+  <g transform="rotate(12 357 260)" fill="#E9F1F0" stroke="#B9CBD0">
+    <circle cx="340" cy="232" r="9"/><circle cx="372" cy="232" r="9"/>
+    <circle cx="340" cy="262" r="9"/><circle cx="372" cy="262" r="9"/>
+    <circle cx="340" cy="292" r="9"/><circle cx="372" cy="292" r="9"/>
+  </g>
+</svg>

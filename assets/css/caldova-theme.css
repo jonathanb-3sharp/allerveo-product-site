@@ -1,0 +1,109 @@
+/* =========================================================
+   Caldova brand theme for the Allerveo product page
+   All brand colors and fonts live in the variables below.
+   To re-skin the page, change these values only.
+   ========================================================= */
+:root {
+  /* Caldova brand palette */
+  --caldova-navy: #0B2545;      /* primary: headings, header, footer */
+  --caldova-teal: #0F6E69;      /* brand accent: buttons, links, stats */
+  --caldova-teal-light: #DDF0EE;/* tinted backgrounds */
+  --caldova-coral: #E8554E;     /* highlight: launch badge */
+  --caldova-sand: #F7F4EF;      /* warm page background */
+  --caldova-ink: #1D2B36;       /* body text */
+  --caldova-slate: #4A5A66;     /* secondary text */
+  --caldova-white: #FFFFFF;
+
+  /* Footnote text color */
+  --caldova-footnote: #A9B6BF;
+
+  /* Typography */
+  --font-sans: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(11, 37, 69, 0.10);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--caldova-ink);
+  background: var(--caldova-white);
+  line-height: 1.6;
+  font-size: 1.0625rem;
+}
+
+.container { width: min(1120px, 92%); margin: 0 auto; }
+.container.narrow { width: min(760px, 92%); }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--caldova-navy); color: var(--caldova-white);
+  padding: 0.5rem 1rem; z-index: 10;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+a { color: var(--caldova-teal); }
+a:focus-visible, .button:focus-visible { outline: 3px solid var(--caldova-coral); outline-offset: 3px; }
+
+/* ---------- Header ---------- */
+.site-header { background: var(--caldova-white); border-bottom: 1px solid #E3E8EC; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; gap: 1rem; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; }
+.brand-mark { width: 36px; height: 36px; }
+.brand-name { font-size: 1.4rem; font-weight: 700; color: var(--caldova-navy); letter-spacing: 0.02em; }
+.nav-list { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; flex-wrap: wrap; }
+.nav-list a { color: var(--caldova-navy); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+.nav-list a:hover { color: var(--caldova-teal); text-decoration: underline; }
+
+/* ---------- Hero ---------- */
+.hero { background: linear-gradient(135deg, var(--caldova-sand) 0%, var(--caldova-teal-light) 100%); padding: 4.5rem 0; }
+.hero-inner { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 3rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-weight: 700; color: var(--caldova-teal); margin: 0; font-size: 0.85rem; }
+.hero h1 { font-size: clamp(2.8rem, 6vw, 4.2rem); color: var(--caldova-navy); margin: 0.2rem 0 0.6rem; line-height: 1.05; }
+.hero h1 .tm { font-size: 0.4em; vertical-align: super; }
+.hero-lede { font-size: 1.3rem; color: var(--caldova-slate); margin: 0 0 1.5rem; max-width: 30ch; }
+.launch-badge {
+  display: inline-block; background: var(--caldova-navy); color: var(--caldova-white);
+  padding: 0.45rem 1rem; border-radius: 999px; font-weight: 700; margin: 0 0 1.75rem;
+  border-left: 6px solid var(--caldova-coral);
+}
+.hero-media { display: flex; justify-content: center; }
+.hero-image { width: 100%; max-width: 420px; height: auto; }
+
+.button {
+  display: inline-block; background: var(--caldova-teal); color: var(--caldova-white);
+  padding: 0.85rem 1.6rem; border-radius: 999px; text-decoration: none; font-weight: 700;
+  box-shadow: var(--shadow);
+}
+.button:hover { background: var(--caldova-navy); }
+
+/* ---------- Sections ---------- */
+.section { padding: 4rem 0; }
+.section-tint { background: var(--caldova-sand); }
+.section h2 { color: var(--caldova-navy); font-size: 2rem; margin-top: 0; }
+
+/* ---------- Claims ---------- */
+.claims-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+.claim-card { background: var(--caldova-white); border-radius: var(--radius); padding: 1.75rem; box-shadow: var(--shadow); border-top: 6px solid var(--caldova-teal); }
+.claim-stat { font-size: 2.6rem; font-weight: 800; color: var(--caldova-teal); margin: 0 0 0.4rem; line-height: 1; }
+.claim-text { margin: 0; font-size: 1.1rem; color: var(--caldova-ink); }
+.claim-text sup a { text-decoration: none; font-weight: 700; margin-left: 2px; }
+
+.claims-pending { grid-column: 1 / -1; background: var(--caldova-white); border: 2px dashed #B9C7CF; border-radius: var(--radius); padding: 2rem; text-align: center; color: var(--caldova-slate); }
+.claims-pending-title { font-size: 1.25rem; font-weight: 700; color: var(--caldova-navy); margin: 0 0 0.4rem; }
+
+/* ---------- Footer ---------- */
+.site-footer { background: var(--caldova-white); border-top: 1px solid #E3E8EC; padding: 2.5rem 0; }
+.footnotes { margin: 0 0 1.25rem; padding-left: 1.25rem; }
+.footnote { color: var(--caldova-footnote); font-size: 0.8rem; margin-bottom: 0.3rem; }
+.footer-legal { color: var(--caldova-slate); font-size: 0.85rem; margin: 0; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 820px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero { padding: 3rem 0; }
+}

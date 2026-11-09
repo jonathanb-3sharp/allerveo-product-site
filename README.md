@@ -23,5 +23,5 @@ The public product page for **Allerveo**, Caldova's once-daily treatment for sea
 - **Online:** this site is published with GitHub Pages (Settings → Pages).
 
 ## Current status
-- The label claims section shows a placeholder until the approved claims are added (**ALV-118**).
-- The launch date is still set to **January 1, 2027** and needs to move to **January 15, 2027** (**ALV-118**).
+- The label claims section shows the three approved claims from the approved claims deck (**ALV-118**).
+- The launch date is **January 15, 2027** (**ALV-118**).

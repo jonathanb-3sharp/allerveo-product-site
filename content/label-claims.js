@@ -5,19 +5,29 @@
 //  - Copy the approved wording exactly. Do not rephrase, shorten or "improve" it.
 //  - Each claim may have an optional footnote, shown at the bottom of the page.
 //
-// Status is "pending" until the approved claims are added (Jira ALV-118).
+// Claims added from the approved claims deck (Jira ALV-118).
 
 window.ALLERVEO_CLAIMS = {
-  status: "pending",   // "pending" or "approved"
-  source: null,        // e.g. "Allerveo label claims - approved.pptx"
+  status: "approved",  // "pending" or "approved"
+  source: "Allerveo label claims - approved.pptx",
   jiraTicket: "ALV-118",
   claims: [
-    // Example of the expected shape:
-    // {
-    //   id: "claim-1",
-    //   stat: "38%",
-    //   headline: "Approved headline text",
-    //   footnote: "Optional footnote text"
-    // }
+    {
+      id: "claim-1",
+      stat: "38%",
+      headline: "Allerveo reduced total nasal symptom scores by 38% at week 2, compared with 21% for placebo.",
+      footnote: "BREEZE-2 Phase 3 study (ALV-302) of 1,248 patients; p<0.001."
+    },
+    {
+      id: "claim-2",
+      stat: "1 daily dose",
+      headline: "One dose a day treats both seasonal and year-round nasal allergy symptoms."
+    },
+    {
+      id: "claim-3",
+      stat: "2.1%",
+      headline: "In clinical trials, drowsiness was reported by 2.1% of patients taking Allerveo, compared with 1.8% taking placebo.",
+      footnote: "BREEZE-2 Phase 3 study (ALV-302) safety population."
+    }
   ]
 };

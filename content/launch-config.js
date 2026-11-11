@@ -5,6 +5,6 @@
 window.ALLERVEO_LAUNCH = {
   productName: "Allerveo",
   market: "United States",
-  launchDate: "2027-01-01",            // ISO format: YYYY-MM-DD
-  launchDateDisplay: "January 1, 2027" // How the date is written on the page
+  launchDate: "2027-01-15",            // ISO format: YYYY-MM-DD
+  launchDateDisplay: "January 15, 2027" // How the date is written on the page
 };
